@@ -24,3 +24,6 @@ And normally the policies file will be moved to `/etc/brave/policies/managed`
 <br>Use `sudo nano /etc/brave/policies/managed/policies.json` to edit the file. (Ctrl + C to save and Ctrl + X to exit.)
 
 You can see all the policies in `brave://policy`.
+
+## How to remove?
+Open a terminal and simply do `sudo rm /etc/brave/policies/managed/policies.json`.
