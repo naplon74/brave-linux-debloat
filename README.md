@@ -15,10 +15,10 @@ Download [this file](https://github.com/naplon74/brave-linux-debloat/releases/do
 <br>Open up the location on your terminal (like `~/Downloads`)
 
 **Run:**
-<br>`chmod +x brave-debloat-linux-install.sh`
+<br>`chmod +x brave-debloat-linux.sh`
 
 **Then run:**
-<br>`./brave-debloat-linux-install.sh`
+<br>`./brave-debloat-linux.sh`
 
 And normally the policies file will be moved to `/etc/brave/policies/managed`
 <br>Use `sudo nano /etc/brave/policies/managed/policies.json` to edit the file. (Ctrl + C to save and Ctrl + X to exit.)
