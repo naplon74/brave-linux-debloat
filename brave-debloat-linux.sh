@@ -7,5 +7,5 @@ wget https://github.com/naplon74/brave-linux-debloat/releases/tag/v1.0/policies.
 sudo cp policies.json /etc/brave/policies/managed
 rm policies.json
 
-echo "Brave Linux debloat succceded"
+echo "Brave Linux debloat succeeded"
 echo "Edit the policies in /etc/brave/policies/managed"
