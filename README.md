@@ -10,6 +10,9 @@
 
 ---
 
+>[!NOTE]
+>I am pretty sure this doesn't work for the Flatpak version of Brave. I suggest you use the `curl` command to [install brave](https://brave.com/linux/).
+
 ## Installation
 Download [this file](https://github.com/naplon74/brave-linux-debloat/releases/download/v1.0/brave-debloat-linux.sh)
 <br>Open up the location on your terminal (like `~/Downloads`)
