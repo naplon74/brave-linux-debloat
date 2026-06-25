@@ -20,7 +20,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/naplon74/brave-linux-debloat
 ```
 
 
-or download `brave-debloat-linux.sh` from the latest release. And run:
+or download `brave-debloat-linux.sh`. And run:
 
 ```sh
 chmod +x brave-debloat-linux.sh
