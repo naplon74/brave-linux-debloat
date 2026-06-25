@@ -7,12 +7,12 @@ A simple script that installs a managed `policies.json` to disable unnecessary B
 * Disables Brave Rewards
 * Disables Brave AI features
 * Disables cryptocurrency-related features
-* Disables the built-in password manager (use a dedicated password manager such as Dashlane, Bitwarden, or KeePass instead)
+* Disables the built-in password manager (use a dedicated password manager such as Dashlaneb or ProtonPass instead)
 
 > [!NOTE]
 > The managed policies used by this project may not work with the Flatpak version of Brave. Installing Brave from the official website repository is recommended.
 
-## Installation (Be aware that you may be asked for sudo permision.)
+## Installation (Be aware that you may be asked for sudo permision)
 
 Open a terminal and run:
 ```sh
