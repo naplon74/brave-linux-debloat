@@ -1,32 +1,48 @@
-# Brave Linux debloat
+# Brave Linux Debloat
 
----
+A simple script that installs a managed `policies.json` to disable unnecessary Brave features and provide a privacy-focused default configuration.
 
-## What is disabled by default?
-- AI slop
-- Crypto stuff
-- Reward stuff
-- Password manager, use [Dashlane](https://www.dashlane.com/) or anything but don't use the default password manager from a browser, those are stored locally meaning they can get stealed.
+## Default changes
 
----
+* Disables Brave Rewards
+* Disables Brave AI features
+* Disables cryptocurrency-related features
+* Disables the built-in password manager (use a dedicated password manager such as Dashlane, Bitwarden, or KeePass instead)
 
->[!NOTE]
->I am pretty sure this doesn't work for the Flatpak version of Brave. I suggest you use the `curl` command to [install brave](https://brave.com/linux/).
+> [!NOTE]
+> The managed policies used by this project may not work with the Flatpak version of Brave. Installing Brave from the official website repository is recommended.
 
 ## Installation
-Download [this file](https://github.com/naplon74/brave-linux-debloat/releases/download/v1.0/brave-debloat-linux.sh)
-<br>Open up the location on your terminal (like `~/Downloads`)
 
-**Run:**
-<br>`chmod +x brave-debloat-linux.sh`
+Download `brave-debloat-linux.sh` from the latest release.
 
-**Then run:**
-<br>`./brave-debloat-linux.sh`
+```sh
+chmod +x brave-debloat-linux.sh
+./brave-debloat-linux.sh
+```
 
-And normally the policies file will be moved to `/etc/brave/policies/managed`
-<br>Use `sudo nano /etc/brave/policies/managed/policies.json` to edit the file. (Ctrl + C to save and Ctrl + X to exit.)
+The script installs the policy file to:
 
-You can see all the policies in `brave://policy`.
+```text
+/etc/brave/policies/managed/policies.json
+```
 
-## How to remove?
-Open a terminal and simply do `sudo rm /etc/brave/policies/managed/policies.json`.
+To edit the configuration later:
+
+```sh
+sudo nano /etc/brave/policies/managed/policies.json
+```
+
+You can verify that the policies are applied by visiting:
+
+```text
+brave://policy
+```
+
+## Uninstall
+
+Remove the managed policy file:
+
+```sh
+sudo rm /etc/brave/policies/managed/policies.json
+```
