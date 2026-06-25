@@ -14,7 +14,13 @@ A simple script that installs a managed `policies.json` to disable unnecessary B
 
 ## Installation
 
-Download `brave-debloat-linux.sh` from the latest release.
+Open a terminal and run:
+```sh
+bash <(curl -fsSL https://raw.githubusercontent.com/naplon74/brave-linux-debloat/refs/heads/main/brave-debloat-linux.sh)
+```
+
+
+or download `brave-debloat-linux.sh` from the latest release. And run:
 
 ```sh
 chmod +x brave-debloat-linux.sh
