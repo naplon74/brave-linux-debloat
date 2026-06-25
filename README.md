@@ -1,5 +1,6 @@
-# Brave Linux Debloat
-
+<div align="center">
+<img src="picture.png">
+</div>
 A simple script that installs a managed `policies.json` to disable unnecessary Brave features and provide a privacy-focused default configuration.
 
 ## Default changes
