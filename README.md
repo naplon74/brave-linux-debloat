@@ -55,4 +55,7 @@ Remove the managed policy file:
 sudo rm /etc/brave/policies/managed/policies.json
 ```
 
+## Documentation
+- See [brave_policies.md](docs/brave_policies.md) for more information about the policies.
+
 ⭐ If you find yourself using my little script consider staring the project, support is always appreciated!
