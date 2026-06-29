@@ -15,7 +15,7 @@ A simple script that installs a managed `policies.json` to disable unnecessary B
 * Everything can be disabled/enabled to your pleasing!
 
 > [!NOTE]
-> The managed policies used by this project may not work with the Flatpak version of Brave. Installing Brave from the official website repository is recommended.
+> The managed policies used by this project may not work with the Flatpak version of Brave. Installing Brave from the official [website](https://brave.com/linux/) is recommended.
 
 ## Installation (Be aware that you may be asked for sudo permision)
 
