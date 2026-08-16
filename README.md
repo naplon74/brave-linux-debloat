@@ -5,6 +5,9 @@ https://github.com/user-attachments/assets/5f0c56b4-c992-4162-bd30-d7d42e8aa0ed
 A simple script that installs a managed `policies.json` to disable unnecessary Brave features and provide a privacy-focused default configuration.
 </div>
 
+## New
+
+* Let user use `wget` or `curl` to download the `policies.json` file.
 
 ## Default changes
 
