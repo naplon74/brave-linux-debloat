@@ -1,14 +1,28 @@
 #!/bin/bash
 
+debloat_with_curl() {
+    echo "Brave Linux debloat by Naplon_"
+    echo "Github: https://github.com/naplon74/brave-linux-debloat"
+
+    sudo mkdir /etc/brave/policies/managed -p
+
+    curl -L --fail -o policies.json https://raw.githubusercontent.com/naplon74/brave-linux-debloat/refs/heads/main/policies.json
+    sudo cp policies.json /etc/brave/policies/managed
+    rm -f policies.json
+
+    echo "Brave Linux debloat succeeded"
+    echo "Edit the policies in /etc/brave/policies/managed"
+}
+
 debloat() {
     echo "Brave Linux debloat by Naplon_"
     echo "Github: https://github.com/naplon74/brave-linux-debloat"
 
     sudo mkdir /etc/brave/policies/managed -p
 
-    wget https://raw.githubusercontent.com/naplon74/brave-linux-debloat/refs/heads/main/policies.json
+    wget -O policies.json https://raw.githubusercontent.com/naplon74/brave-linux-debloat/refs/heads/main/policies.json
     sudo cp policies.json /etc/brave/policies/managed
-    rm policies.json
+    rm -f policies.json
 
     echo "Brave Linux debloat succeeded"
     echo "Edit the policies in /etc/brave/policies/managed"
@@ -41,7 +55,7 @@ while true; do
     echo                                                                                                                                                                   
 
     PS3="Brave Linux debloat by Naplon_ - Choose an option: "
-    options=("Debloat Brave Linux" "Edit config file" "Uninstall the debloat config file" "Exit")
+    options=("Debloat Brave Linux (wget)" "Debloat Brave Linux (curl)" "Edit config file" "Uninstall the debloat config file" "Exit")
 
     select choix in "${options[@]}"; do
         case $REPLY in
@@ -49,18 +63,23 @@ while true; do
                 debloat
                 pause
                 break
-                ;;  
+                ;; 
             2)
+                debloat_with_curl
+                pause
+                break
+                ;; 
+            3)
                 edit_config
                 pause
                 break
                 ;;
-            3)
+            4)
                 uninstall
                 pause
                 break
                 ;;
-            4)
+            5)
                 exit 0
                 ;;
             *)
